@@ -175,15 +175,54 @@ else:
 
 
 #Exercício 17
-lista = [14,80,35,90,45,33,1,150,10,77]
-i = 0
-cont = 0
+"""numeros = []
+for i in range(8):
+    numero = int(input(f"Digite o {i + 1}º número: "))
+    numeros.append(numero)
+    #print(numeros)
+contador = 0
+for x in numeros:
+    if 10 <= x <= 150:  
+        contador += 1
+print(f"Número(s) no intervalo entre 10 e 150 (inclusive): {contador}")
+numeros.sort()
+print(numeros)
+"""
 
-while i<len(lista):
-    print(i, " - ", lista[i])
-    if lista[i] >= 15 and lista[i] <= 150:
-        i = i + 1
-        cont = cont + 1
+
+#Exercício 18
+"""idade = []
+for i in range(15):
+    numero = int(input(f"Digite a idade do {i + 1}º: "))
+    idade.append(numero)
+    print(idade)
+    if numero >= 18:
+        print("Maior de Idade!")
     else:
-        cont_nao += 1
-    
+        print("Menor de idade!")"""
+
+#Exercício 19
+total_homens = 0
+total_mulheres = 0
+total_naocis = 0
+
+for i in range (5):
+    nome = input(f"Digite o nome do {i+1}º: ")
+    sexo = input(f"Digite o sexo de {nome} (M para masculino, F para feminino, N  não se identifica com gêneros CIS): ").upper()
+    if sexo == 'M':
+        print(f"{nome} é homem.")
+        total_homens += 1
+    elif sexo == 'F':
+        print(f"{nome} é mulher.")
+        total_mulheres += 1
+    else:
+        print(f"{nome} não se identifica com gêneros CIS.")
+        total_naocis += 1
+
+print(f"Total de homens é: {total_homens}")
+print(f"Total de mulheres é: {total_mulheres}")
+print(f"Total de não-cis é: {total_naocis}")
+
+
+
+#Exercício 20
