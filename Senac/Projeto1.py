@@ -26,4 +26,3 @@ print('\n Vamos precisar de {:.2f}m de ferro.'.format((metros_ferro)))
 quant_barras_ferro = (metros_ferro / 12) * 1.1
 print('\n Serão necessárias {:.2f} barras de ferro.'.format(round(quant_barras_ferro)))
 print('\n')
-
