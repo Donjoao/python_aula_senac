@@ -82,7 +82,7 @@ print(listaNovaCarros)
 """
 
 #conversão de Tupla em list
-tuplafrutas = ('frutaa','frutab','frutac')
+tuplafrutas = ('frutaa','frutab','frutac','frutad')
 print(type(tuplafrutas))
 x = list(tuplafrutas)
 print(type(x))

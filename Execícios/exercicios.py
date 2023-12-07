@@ -206,7 +206,7 @@ total_homens = 0
 total_mulheres = 0
 total_naocis = 0
 
-for i in range (5):
+for i in range (10):
     nome = input(f"Digite o nome do {i+1}º: ")
     sexo = input(f"Digite o sexo de {nome} (M para masculino, F para feminino, N  não se identifica com gêneros CIS): ").upper()
     if sexo == 'M':
