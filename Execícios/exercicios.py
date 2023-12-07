@@ -224,5 +224,4 @@ print(f"Total de mulheres é: {total_mulheres}")
 print(f"Total de não-cis é: {total_naocis}")
 
 
-
 #Exercício 20
