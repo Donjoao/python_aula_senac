@@ -202,11 +202,12 @@ for i in range(15):
         print("Menor de idade!")"""
 
 #Exercício 19
-total_homens = 0
+
+"""total_homens = 0
 total_mulheres = 0
 total_naocis = 0
 
-for i in range (10):
+for i in range (5):
     nome = input(f"Digite o nome do {i+1}º: ")
     sexo = input(f"Digite o sexo de {nome} (M para masculino, F para feminino, N  não se identifica com gêneros CIS): ").upper()
     if sexo == 'M':
@@ -222,6 +223,16 @@ for i in range (10):
 print(f"Total de homens é: {total_homens}")
 print(f"Total de mulheres é: {total_mulheres}")
 print(f"Total de não-cis é: {total_naocis}")
+"""
 
 
 #Exercício 20
+"""Faça um
+algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente de vários carros. O desconto
+deverá ser calculado de acordo com o ano do veículo. Até 2000 - 12% e acima de 2000 - 7%. O sistema deverá
+perguntar se deseja continuar calculando desconto até que a resposta seja: “(N) Não” . Informar total de carros com
+ano até 2000 e total geral."""
+print("Bem vinde a CARANGO VELHO! Compre aqui seu carro usado!")
+sim_nao =  input('Deseja acessar nossos descontos? S para Sim N para Não: ').upper
+for x in range(8):
+    print
