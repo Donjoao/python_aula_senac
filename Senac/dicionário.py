@@ -44,7 +44,7 @@ produto["marca"].append("Burley")
 print(produto["marca"])
 produto.sort()
 print(produto["marca"])"""
-
+"""
 produtos = {
     "cocalata" : {
         "quantidade" : "250ml",
@@ -64,8 +64,10 @@ produtos["cocalata"]["quantidade"] = ["400ml", "250ml", "210ml",]
 produtos["coxinha"]["tamanho"] = ["pequena", "media", "grande", "larica"]
 produtos["coxinha"]["valor"] = [5.00 , 6.00, 7.50, 8.50]
 produtos.update({
-    "café" {
+    "café" : {
         "tipo" : "torrado"
-    }
-})
+        }
+}),
 print(produtos)
+produtos["café"]["tipo"] = ["torrado","Levemente Torrado", "Se perdeu no personagem"]
+print(produtos)"""
