@@ -1,10 +1,13 @@
 from openpyxl import Workbook
-from statistics import mean
+
+
 # Utilziei o codigo pip install openpyxl no terminal para instalar o openpyxl.
 # Utilizei o codigo pip install pandas no terminal para instalar o pandas.
+
 wb = Workbook()
 ws = wb.active
 
+#Head
 ws['A1'] = "Dia"
 ws['B1'] = "Vendedor"
 ws['C1'] = "Produtos"
