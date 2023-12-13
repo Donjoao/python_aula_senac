@@ -30,8 +30,8 @@ ws['C3'] = "Carregador"
 
 
 #Unidades
-ws['D2'] = "1"
-ws['D3'] = "2"
+ws['D2'] = 1
+ws['D3'] = 2
 
 
 #Preços

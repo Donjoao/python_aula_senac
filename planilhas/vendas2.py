@@ -36,11 +36,11 @@ ws['C5'] = "Cabo HDMI"
 ws['C6'] = "Fone P2"
 
 #Unidades
-ws['D2'] = "1"
-ws['D3'] = "1"
-ws['D4'] = "1"
-ws['D5'] = "1"
-ws['D6'] = "4"
+ws['D2'] = 1
+ws['D3'] = 1
+ws['D4'] = 1
+ws['D5'] = 1
+ws['D6'] = 4
 
 #Preços
 ws['E2'] = 1400
