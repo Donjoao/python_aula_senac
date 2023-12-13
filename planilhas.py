@@ -1,6 +1,7 @@
 from openpyxl import Workbook
-# Utilziei o codigo pip install openpyxl no terminal para instalar o openpyxl
-
+from statistics import mean
+# Utilziei o codigo pip install openpyxl no terminal para instalar o openpyxl.
+# Utilizei o codigo pip install pandas no terminal para instalar o pandas.
 wb = Workbook()
 ws = wb.active
 
@@ -16,5 +17,6 @@ ws['C3'] = 980
 ws['B5'] = "Total"
 ws['C5'] = sum([ws["C2"].value,ws["C3"].value])
 ws['C6'] = min([ws["C2"].value,ws["C3"].value])
-
+ws['C7'] = mean([ws["C2"].value, ws["C3"].value])
 wb.save('my_excel_file.xlsx')
+
