@@ -32,7 +32,7 @@ ws['D3'] = "2"
 
 
 #Preços
-ws['B2'] = 350
-ws['B3'] = 85
+ws['E2'] = 350
+ws['E3'] = 85
 
 wb.save('vendas3.xlsx')
