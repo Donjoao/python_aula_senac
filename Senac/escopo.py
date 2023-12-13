@@ -12,7 +12,4 @@ x = "josé"
 
 def MostrarNome():
     x = "SENAC"
-    print(x)
-
-MostrarNome()
-print(x)
+    print(MostrarNome)

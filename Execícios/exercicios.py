@@ -175,19 +175,19 @@ else:
 
 
 #Exercício 17
-"""numeros = []
-for i in range(8):
-    numero = int(input(f"Digite o {i + 1}º número: "))
-    numeros.append(numero)
-    #print(numeros)
-contador = 0
-for x in numeros:
-    if 10 <= x <= 150:  
-        contador += 1
-print(f"Número(s) no intervalo entre 10 e 150 (inclusive): {contador}")
-numeros.sort()
-print(numeros)
-"""
+#numeros = []
+#for i in range(8):
+#    numero = int(input(f"Digite o {i + 1}º número: "))
+#    numeros.append(numero)
+#    #print(numeros)
+#contador = 0
+#for x in numeros:
+#    if 10 <= x <= 150:  
+#        contador += 1
+#print(f"Número(s) no intervalo entre 10 e 150 (inclusive): {contador}")
+#numeros.sort()
+#print(numeros)
+#
 
 
 #Exercício 18
@@ -227,12 +227,109 @@ print(f"Total de não-cis é: {total_naocis}")
 
 
 #Exercício 20
-"""Faça um
-algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente de vários carros. O desconto
+"""Faça um algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente de vários carros. O desconto
 deverá ser calculado de acordo com o ano do veículo. Até 2000 - 12% e acima de 2000 - 7%. O sistema deverá
 perguntar se deseja continuar calculando desconto até que a resposta seja: “(N) Não” . Informar total de carros com
-ano até 2000 e total geral."""
-print("Bem vinde a CARANGO VELHO! Compre aqui seu carro usado!")
-sim_nao =  input('Deseja acessar nossos descontos? S para Sim N para Não: ').upper
-for x in range(8):
-    print
+ano até 2000 e total geral.
+total_carros_1999 = 0
+total_carros_2000 = 0
+total_geral = 0
+
+while True:
+    reload = int(input("Digite 1 para iniciar nosso sistema! Digite 2 para cancelar o atendimento!"))
+    if reload == 1:
+        ano_carro = int(input("Digite o ano do carro: "))
+        preco_carro = float(input("Digite o preço do carro: "))
+        if ano_carro <= 1999: 
+            desconto = preco_carro * 12/100
+            preco_carro_total = preco_carro - desconto
+            total_carros_1999 += 1
+            print(f'Este carro com desconto seu valor é: R${preco_carro_total}')
+        else:
+            desconto = preco_carro * 7/100
+            preco_carro_total = preco_carro - desconto
+            total_geral += 1
+            total_carros_2000 += 1
+            print(f'Este carro com desconto seu valor é: R${preco_carro_total}')    
+    else:
+        print('Agradecemos por utilizar nosso sistema! :D')
+        print(f'Total de carros pesquisados: {total_geral}')
+        print(f'O total de carros anos 2000 pesquisados foram: {total_carros_2000}')
+        break
+    """
+    
+#Escrever um algoritmo que leia os dados de “N” pessoas (nome, sexo, idade e saúde) e informe se está apta ou não
+#para cumprir o serviço militar obrigatório. Informe os totais.
+
+# um for que entra com X n de pessoas que tem que responder para nome, sexo, idade, saúde, 
+# calcular por saude se está apto ou nao retornar 1 ficha com os campos para nome # 
+"""
+n = int(input("Quantos convocados para o serviço militar obrigatório serão testados?: "))
+for pessoas in range(n):
+    senha = int(input('Insira a senha do convocado: '))
+    nome = (input("Qual o nome do convocado?: "))
+    sexo = input('Qual o sexo do convocado?(F/M/NB): ')
+    idade = int(input('Qual a idade do convocado?: '))
+    saúde = float(input('Em % quão bem está a saúde do convocado: '))
+    print('______________________')
+    
+    if sexo == ("M"):
+        print('Sexo Check!')
+    else:
+        print('Não está de acordo com as vagas!')
+        
+    if idade < 18:
+        print ('Idade inferior a 18 anos não podem servir!')
+    else:
+        print('Idade Check!')
+        
+    if saúde >= 85:
+        print('Saúde Check!')
+    else:
+        print('Saúde não apta para servir!')
+    print('______________________\n')
+    if sexo == "M" and idade >= 18 and saúde >=85:
+        apto = ('Está apto!')
+    else:
+        apto = ('Não está Apto(a) para o serviço militar obrgatório!')
+    print('_______Ficha do serviço militar obrigatório________')
+    print(f'Prezado convocado de número {senha}, você {apto}')
+    """
+    
+#Faça um algoritmo que receba o preço de custo e o preço de venda de 40 produtos. Mostre como resultado se
+#houve lucro, prejuízo ou empate para cada produto. Informe media de preço de custo e do preço de venda.
+from math import fsum
+from statistics import mean
+
+produtos = []
+preços = []
+venda = []
+
+posicao = 0
+#Importando de Math a f"sum"(Trad: Soma tipo float) para somar numeros Float.
+#Importando de Statistics a "mean"(Trad: Média) que somas os valores dentro da lista e ja retira a média.
+
+for posicao in range(10):
+    pos_fora = input('Insira o nome do produto: ')
+    preco_custo = int(input('Insira o preço de custo do produto: R$'))
+    preco_venda =  int(input('Insira o preço de venda do produto: R$'))
+    produtos.append(pos_fora)
+    preços.append(preco_custo)
+    venda.append(preco_venda)
+    posicao += 1
+# O for requisita "posicao" in range(x vezes) para realizar as tarefas abaixo, requisitando do usuario, produto, preco de custo e de venda
+# para que após o final do For, inicia-se os calculos para saber se houve lucro.
+
+custo_total = fsum(preços)
+vendas_totais = fsum(venda)
+#print(vendas_totais) #Para constar que esta correto
+#print(custo_total) #Para constar que esta correto
+calculo_final = vendas_totais - custo_total
+print(calculo_final)
+if calculo_final > custo_total:
+    print(f'O lucro foi de: R${calculo_final:.2f}!')
+else:
+    print(f'Não houve lucro!')
+media_venda = (vendas_totais)/posicao
+print(f"A média de venda foi:R${media_venda:.2f}! ")
+#print(f"A média de custo foi: {media_preco_custo}")
