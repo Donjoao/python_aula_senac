@@ -44,7 +44,7 @@ print(nomeCompleto[0:10])# Da primeira posição até uma anterior à 10.
 print(nomeCompleto[-1])  # A ultima posição.
 print(nomeCompleto[3:10])# Da terceira à décima.
 print(nomeCompleto[5::]) # Da quinta posição à última.
-print(nomeCompleto[-6::])# Da -6 posição à última.
+print(nomeCompleto[-6::])# Da -6 posição à última.tw
 
 
 cpf = ("47973008845")
