@@ -295,7 +295,7 @@ for pessoas in range(n):
     print('_______Ficha do serviço militar obrigatório________')
     print(f'Prezado convocado de número {senha}, você {apto}')
     """
-    
+"""    
 #Faça um algoritmo que receba o preço de custo e o preço de venda de 40 produtos. Mostre como resultado se
 #houve lucro, prejuízo ou empate para cada produto. Informe media de preço de custo e do preço de venda.
 from math import fsum
@@ -333,3 +333,42 @@ else:
 media_venda = (vendas_totais)/posicao
 print(f"A média de venda foi:R${media_venda:.2f}! ")
 #print(f"A média de custo foi: {media_preco_custo}")
+"""
+# Faça um algoritmo que receba um número e mostre uma mensagem caso este número sege maior que 80, menor
+# que 25 ou igual a 40.
+
+"""
+while True:
+    n = float(input('Insira um valor para localiza-lo, digite 0 para encerrar: '))
+    if n == 0:
+        print('Agradecemos por ter utilizado nosso sistema! :D')
+        break
+    if n > 80:
+        print('O Número é maior que 80!')
+    elif n < 25:
+        print('É menor que 25!')
+    elif n == 40:
+        print('O número inserido é 40!')
+    else:
+        print('Este número está entre o 25 e 80!')
+"""
+
+while True:
+    lista_numero = {
+        1: "Um",
+        2: "Dois",
+        3: "Três",
+        4: "Quatro",
+        5: "Cinco",
+        6: "Seis"
+    }
+
+    numero = int(input('Insira um número entre 1 e 6, digite 0 para encerrar sessão:'))
+
+    if numero in lista_numero:
+        print("Por extenso: ", lista_numero[numero])
+    elif numero == 0: 
+        print("Encerrando sessão! ")
+        break
+    else:
+        print("Número invalido!")
