@@ -24,4 +24,4 @@ def LeiaMatrizLocal(NomeArquivo):
     return mat
 
 mat = [9 * [0] for k in range(9)]
-print(LeiaMatrizLocal("sudoku4.txt"))
+print(LeiaMatrizLocal(mat))

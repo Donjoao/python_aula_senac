@@ -352,7 +352,7 @@ while True:
     else:
         print('Este número está entre o 25 e 80!')
 """
-
+"""
 while True:
     lista_numero = {
         1: "Um",
@@ -371,4 +371,4 @@ while True:
         print("Encerrando sessão! ")
         break
     else:
-        print("Número invalido!")
+        print("Número invalido!")"""

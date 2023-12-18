@@ -178,3 +178,16 @@ quant_barras_ferro = (metros_ferro / 12) * 1.1
 print('\n Serão necessárias {:.2f} barras de ferro.'.format(round(quant_barras_ferro)))
 print('\n')
 """
+
+
+#   Função que encontra um número de uma lista     
+"""l = [9, 0, 7, 0, 4, 6, 3, 0, 8]
+
+def EncontrarElemento(l, digito ):
+    for i, elemento in enumerate(l):
+        if elemento == digito:
+            return i
+        
+    return -1
+
+print(EncontrarElemento(l,0))"""
