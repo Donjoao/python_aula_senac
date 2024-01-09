@@ -1,4 +1,4 @@
 # python_aula_senac
 Aulas Senac
 
-# Execle_aula_senac
+# Execel_aula_senac
